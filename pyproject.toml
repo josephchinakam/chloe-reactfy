@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chloe-reactfy"
+version = "1.0.0"
+description = "Convert HTML to JSX, simple yet elegant"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [
+  { name="Joseph Simbarashe Chinaka", email="josephchinakam@gmail.com" }
+]
+dependencies = [
+  "beautifulsoup4",
+]
+
+[project.scripts]
+chloe-reactfy = "chloe_reactfy.imports:main"
